@@ -111,8 +111,8 @@
 {%- endif -%}
 
 <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-  <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
+  <symbol id="icon-search" viewbox="0 0 23 24" fill="none">
+    <path d="M12.375 0.700684C6.77002 0.700684 2.20999 5.35378 2.20999 11.0731C2.20999 13.1 2.78313 14.9926 3.77207 16.5919L0.661639 19.7658C-0.220546 20.666 -0.220546 22.1254 0.661639 23.0255C1.54382 23.9257 2.97406 23.9257 3.85615 23.0255L6.96658 19.8516C8.53404 20.8608 10.3887 21.4456 12.375 21.4456C17.98 21.4456 22.54 16.7925 22.54 11.0731C22.54 5.35378 17.9801 0.700684 12.375 0.700684ZM12.375 19.1406C8.01557 19.1406 4.46887 15.5215 4.46887 11.0731C4.46887 6.62475 8.01553 3.00567 12.375 3.00567C16.7345 3.00567 20.2811 6.62475 20.2811 11.0731C20.2811 15.5215 16.7345 19.1406 12.375 19.1406Z" fill="#1E3851"/>
   </symbol>
 
   <symbol id="icon-reset" class="icon icon-close"  fill="none" viewBox="0 0 18 18" stroke="currentColor">
@@ -252,6 +252,7 @@
           </localization-form>
         {%- endif -%}
       </div>
+      
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
