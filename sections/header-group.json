@@ -8,7 +8,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Annoncement-Block",
+            "short_text": "Mobile_text",
             "text_alignment": "center",
             "color_scheme": "scheme-1",
             "link": ""

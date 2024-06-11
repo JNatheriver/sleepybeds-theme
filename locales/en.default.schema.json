@@ -489,6 +489,10 @@
               "label": "Text",
               "default": "Welcome to our store"
             },
+            "short_text": {
+              "label": "Short text",
+              "default": "Mobile text"
+            },
             "text_alignment": {
               "label": "Text alignment",
               "options__1": {
