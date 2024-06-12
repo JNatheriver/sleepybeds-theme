@@ -19,7 +19,7 @@
 {% endif %}
 
 <div
-  class="utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator and section.blocks.size > 0 %} utility-bar--bottom-border{% elsif section.settings.show_line_separator and section.settings.show_social and social_icons%} utility-bar--bottom-border-social-only{% endif %}{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header-localization{% endif %} h-[34.85px]"
+  class="font-semibold utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator and section.blocks.size > 0 %} utility-bar--bottom-border{% elsif section.settings.show_line_separator and section.settings.show_social and social_icons%} utility-bar--bottom-border-social-only{% endif %}{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header-localization{% endif %} font-semibold-header"
   {{ block.shopify_attributes }}
 >
   <div class="page-width utility-bar__grid{% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
@@ -40,7 +40,10 @@
               class="announcement-bar__link link link--text focus-inset animate-arrow"
             >
           {%- endif -%}
-          <p class="announcement-bar__message">
+          <p class="announcement-bar__message flex flex-row space-x-4">
+            {% if section.blocks.first.settings.image %}
+              {{ section.blocks.first.settings.image | image_url: width: 20 | image_tag }}
+            {% endif %}
             <span class="max-md:hidden">{{ section.blocks.first.settings.text | escape | upcase }}</span>
             <span class="md:hidden">{{ section.blocks.first.settings.short_text | escape | upcase }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
@@ -252,6 +255,11 @@
           "id": "short_text",
           "default": "t:sections.announcement-bar.blocks.announcement.settings.short_text.default",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.short_text.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.image.label"
         },
         {
           "type": "url",

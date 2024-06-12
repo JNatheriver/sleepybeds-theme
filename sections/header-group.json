@@ -45,10 +45,37 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "announcement_bar_Tt7dqT": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_CAjmUi": {
+          "type": "announcement",
+          "settings": {
+            "text": "Made in UK",
+            "short_text": "Made in UK",
+            "image": "shopify:\/\/shop_images\/flagpack_gb-ukm.svg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_CAjmUi"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "announcement_bar_Tt7dqT"
   ]
 }

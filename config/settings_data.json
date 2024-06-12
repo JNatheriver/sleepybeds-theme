@@ -4,7 +4,7 @@
     "logo_width": 90,
     "type_header_font": "poppins_n6",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "poppins_n4",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -154,11 +154,11 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#242833",
+          "background": "#1e3851",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
-          "button_label": "#000000",
+          "button_label": "#1e3851",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }

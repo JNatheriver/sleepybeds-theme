@@ -493,6 +493,9 @@
               "label": "Short text",
               "default": "Mobile text"
             },
+            "image": {
+              "label": "Image"             
+            },
             "text_alignment": {
               "label": "Text alignment",
               "options__1": {
